@@ -1,0 +1,57 @@
+.url-shortener {
+    height: 40vh;
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px; 
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+}
+
+.url-shortener__title {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.url-shortener__actions {
+    height: 13vh;
+    width: 25vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.url-shortener__actions-input {
+    height: 4vh;
+    padding: 5px 16px;  
+    border-radius: 8px;     /* Deixa os cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+}
+
+.url-shortener__actions-button { 
+    height: 4.7vh;
+    padding: 5px 16px;  
+    border-radius: 8px;  
+    border: none;
+    background-color: rgb(104, 104, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.url-shortener__response {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.url-shortener__response-text {
+    font-size: 18px;
+}
