@@ -20,7 +20,7 @@ function App() {
       }
 
       const data = await response.json()
-      setResposta(data.shortUrl)
+      setResposta("http://localhost:8080/shorten/" + data.shortUrl)
     } catch (error) {
       setResposta('Error sending message.')
     }
@@ -48,7 +48,7 @@ function App() {
 
       <div className='url-shortener__response'>
         <p className='url-shortener__response-text'>
-          Shortened URL: {resposta}
+          Shortened URL: <a href={resposta} target="_blank" rel="noopener noreferrer">{resposta}</a>
         </p>
       </div>
     </div>
